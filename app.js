@@ -31,13 +31,14 @@ Complete the exercise in the space below:
 
 function isAdult(num){
     if(num >= 18){
-        console.log(num +" Is Adult")
+        return "Adult"
     }
-    else if (num <=17){
-        console.log(num +" Is kid")
+    else if (num <18){
+        return "Minor"
     }
-    else {console.log("wrong entry")}
+    else {return"wrong entry"}
         
+    
     }
 
 
@@ -58,11 +59,11 @@ Complete the exercise in the space below:
 
 function isCharAVowel(character){
     if(character === 'a' || character ==='e' || character ==="o" || character === "i" || character === "u"){
-        console.log(character + "is vowel")
+        return character + " is vowel"
     }
 
     else{
-        console.log("the "+ character + " is not vowel")
+        return "the "+ character + " is not vowel"
     }
 }
 
@@ -82,9 +83,9 @@ should return 'johnsmith@example.com'.
 Complete the exercise in the space below:
 */
 
-function generateEmail(name,domain){
+function generateEmail(name , domain){
 
-    return(name,domain)
+    return name + "@" +domain
 }
 
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
@@ -102,7 +103,7 @@ Complete the exercise in the space below:
 */
 function greetUser(name, time){
 
-    console.assert.log("Good " + morning +", "+ Sam+ "!")
+    return "Good " + time +", "+ name+ "!"
 
 }
 
@@ -124,22 +125,22 @@ function maxOfThree(nam1, nam2, nam3){
 
     if( nam1 > nam2 && nam1 > nam3){
 
-        console.log("maxOfThree(" + nam1+", " +nam2+ ", "+ nam3 +") is "+ nam1)
+        return "maxOfThree( " + nam1+", " +nam2+ ", "+ nam3 +") is "+ nam1
     }  
 
     else if( nam2 > nam1 && nam2 > nam3){
 
-        console.log("maxOfThree(" + nam1+", " +nam2+ ", "+ nam3 +") is "+ nam2)
+        return "maxOfThree( " + nam1+", " +nam2+ ", "+ nam3 +") is "+ nam2
     }  
 
     else if( nam3 > nam1 && nam3 > nam2){
 
-    console.log("maxOfThree(" + nam1+", " +nam2+ ", "+ nam3 +") is "+ nam3)
+    return "maxOfThree( " + nam1+", " +nam2+ ", "+ nam3 +") is "+ nam3
     }  
 
     else{
 
-        console.log("the numbers are equal")
+        return "the numbers are equal"
     }
 
 }
